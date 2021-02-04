@@ -20,8 +20,8 @@ async function main() {
   // Deploy new treasury.
 
   const params = [
-    '0x26f9Bd6af98a56D34bA49ce0B0359658Eecd77bE',
-    '0x0a180a76e4466bf68a7f86fb029bed3cccfaaac5'
+    '0x26f9Bd6af98a56D34bA49ce0B0359658Eecd77bE', // factory
+    '0xc778417E063141139Fce010982780140Aa0cD5Ab' // weth
   ]
 
   const factory = await UniswapV2Router02.connect(operator).deploy(...params);
